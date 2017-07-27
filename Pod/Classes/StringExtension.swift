@@ -25,7 +25,7 @@ extension String {
         return self.characters.count
     }
     
-    func getChar(index:Int) -> Character {
+    func getChar(_ index:Int) -> Character {
         return Array(self.characters)[index]
     }
     
@@ -170,7 +170,7 @@ extension String {
         
             while let result = regex.firstMatch(in: string, options:[], range:  NSMakeRange(0, string.length())){
                 print(result)
-                let matches = self.getMatches(ranges: result, string: string)
+                let matches = getMatches(ranges: result, string: string)
                 let replacements = callback(matches)
                 print(1)
                 for i in 0 ..< replacements.count {
@@ -193,20 +193,19 @@ extension String {
         return string
     }
     
-    
-    func getMatches(ranges:NSTextCheckingResult, string:String) -> [String] {
-        var matches = [String]()
-        for i in 0..<ranges.numberOfRanges{
-            if let r = ranges.rangeAt(i).toRange() {
-                 matches.append(string.substr(r: r))
-            } else {
-                matches.append("")
-            }
-        }
-        return matches
-    }
-    
+        
 } //end string library
 
+func getMatches(ranges:NSTextCheckingResult, string:String) -> [String] {
+    var matches = [String]()
+    for i in 0..<ranges.numberOfRanges{
+        if let r = ranges.rangeAt(i).toRange() {
+             matches.append(string.substr(r: r))
+        } else {
+            matches.append("")
+        }
+    }
+    return matches
+}
 
 

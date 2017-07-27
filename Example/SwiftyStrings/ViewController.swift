@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  PROJECT
+//  SwiftyStrings
 //
-//  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
+//  Created by Abraham Adberstein on 7/27/17.
+//  Copyright © 2017 Abraham Adberstein. All rights reserved.
 //
 
 import UIKit
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 }
 

@@ -26,12 +26,12 @@ import SwiftyStrings
 ```
 **length()**
 ```swift
-
+"Hello World".length() // 11
 ```
 
 **getChar()**
 ```swift
-
+"Captian America".getChar(0) // C
 ```
 
 **hexStringToInt()**

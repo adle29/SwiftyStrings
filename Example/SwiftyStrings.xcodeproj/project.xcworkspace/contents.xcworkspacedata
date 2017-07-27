@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PROJECT.xcodeproj">
+      location = "self:SwiftyStrings.xcodeproj">
    </FileRef>
 </Workspace>

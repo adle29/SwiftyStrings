@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyStrings (0.1.0)
+
+DEPENDENCIES:
+  - SwiftyStrings (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyStrings:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftyStrings: 917d02725d75b97e54f1faaa4304725ba459a6f1
+
+PODFILE CHECKSUM: 4dd025d280386428ef8dff329cfa3cb5516455b4
+
+COCOAPODS: 1.2.0
