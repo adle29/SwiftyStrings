@@ -1,26 +1,95 @@
-pod-template
+SwiftyStrings
 ============
 
-An opinionated template for creating a Pod with the following features:
+SwiftyStrings is simple string manipulation extenson for Swift. The purpose of this library is to translate useful PHP string methods to Swift.
 
-- Git as the source control management system
-- Clean folder structure
-- Project generation
-- MIT license
-- Testing as a standard
-- Turnkey access to Travis CI
-- Also supports Carthage
+## Installation
 
-## Getting started
+SwiftyStrings is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-There are two reasons for wanting to work on this template, making your own or improving the one for everyone's. In both cases you will want to work with the ruby classes inside the `setup` folder, and the example base template that it works on from inside `template/ios/`. 
+```ruby
+pod "SwiftyStrings"
+```
 
-## Best practices
+## Usage
 
-The command `pod lib create` aims to be ran along with this guide: http://guides.cocoapods.org/making/using-pod-lib-create.html so any changes of flow should be updated there also.
+```swift
+import SwiftyStrings
+```
 
-It is open to communal input, but adding new features, or new ideas are probably better off being discussed in an issue first. In general we try to think if an average Xcode user is going to use this feature or not, if it's unlikely is it a _very strongly_ encouraged best practice ( ala testing / CI. ) If it's something useful for saving a few minutes every deploy, or isn't easily documented in the guide it is likely to be denied in order to keep this project as simple as possible.
+## Methods
 
-## Requirements:
+**is_numeric()**
+```swift
+"1".is_numeric() // True
+```
+**length()**
+```swift
 
-- CocoaPods 1.0.0+
+```
+
+**getChar()**
+```swift
+
+```
+
+**hexStringToInt()**
+```swift
+
+```
+
+**indexOf()**
+```swift
+
+```
+
+**split()**
+```swift
+
+```
+
+**strstr()**
+```swift
+
+```
+
+**strrev()**
+```swift
+
+```
+
+**substr()**
+```swift
+
+```
+
+**substr_count()**
+```swift
+
+```
+
+**str_replace()**
+```swift
+
+```
+
+**strpos()**
+```swift
+
+```
+
+**preg_match()**
+```swift
+
+```
+
+**preg_replace()**
+```swift
+
+```
+
+**preg_match_one_callback()**
+```swift
+
+```
