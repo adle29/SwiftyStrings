@@ -1,14 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyStrings'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'SwiftyStrings is simple string manipulation extenson for Swift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 SwiftyStrings is simple string manipulation extenson for Swift. The purpose of this library is to translate useful PHP string methods to Swift. This library is helpful because the Swift API to manipulate strings is complicated and difficult to use when working with string parsing or manipulation projects. 
                        DESC

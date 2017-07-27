@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     func intToIndexRange(range:Range<Int>) -> Range<String.Index>{
         let fromIndex = self.index(self.startIndex, offsetBy: range.lowerBound)
@@ -196,7 +196,7 @@ extension String {
         
 } //end string library
 
-func getMatches(ranges:NSTextCheckingResult, string:String) -> [String] {
+private func getMatches(ranges:NSTextCheckingResult, string:String) -> [String] {
     var matches = [String]()
     for i in 0..<ranges.numberOfRanges{
         if let r = ranges.rangeAt(i).toRange() {
