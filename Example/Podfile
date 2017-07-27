@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyStrings_Example' do
+  pod 'SwiftyStrings', :path => '../'
+
+  target 'SwiftyStrings_Tests' do
+    inherit! :search_paths
+
+    ${INCLUDED_PODS}
+  end
+end
