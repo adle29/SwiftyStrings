@@ -157,22 +157,22 @@ public extension String {
 
     func preg_replace_callback(_ pattern:String, callback:(_ matches:[String]) -> [String]) -> String{
         var string = self
-        string = string.preg_match_one_callback(pattern:"PA1\\*([^\\*]*[\\s])*\\*", str:string, callback: callback)
+        string = string.preg_match_one_callback(pattern:pattern, str:string, callback: callback)
             
         return string
     }
     
-    func preg_match_one_callback(pattern:String, str:String, callback:(_ matches:[String]) -> [String]) -> String {
+    private func preg_match_one_callback(pattern:String, str:String, callback:(_ matches:[String]) -> [String]) -> String {
         var string = str
         
         do {
             let regex = try NSRegularExpression(pattern: pattern)
         
             while let result = regex.firstMatch(in: string, options:[], range:  NSMakeRange(0, string.length())){
-                print(result)
+
                 let matches = getMatches(ranges: result, string: string)
                 let replacements = callback(matches)
-                print(1)
+
                 for i in 0 ..< replacements.count {
                     if  i < result.numberOfRanges {
                         let range = result.rangeAt(i)

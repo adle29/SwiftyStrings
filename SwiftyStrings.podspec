@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyStrings'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'SwiftyStrings is simple string manipulation extenson for Swift.'
   s.description      = <<-DESC
 SwiftyStrings is simple string manipulation extenson for Swift. The purpose of this library is to translate useful PHP string methods to Swift. This library is helpful because the Swift API to manipulate strings is complicated and difficult to use when working with string parsing or manipulation projects. 
