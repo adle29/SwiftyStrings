@@ -5,7 +5,7 @@ SwiftyStrings is simple string manipulation extenson for Swift. The purpose of t
 
 ## Contribution
 
-Please feel free to contribute to the project. Goals is to convert as many useful php string functions to ease the complexity of Swift string manipulaiton API. 
+Please feel free to contribute to the project. The goal is to convert as many useful php string methods into Swift methods in order to ease the complexity of the Swift string manipulaiton API. 
 
 ## Installation
 
@@ -48,10 +48,10 @@ import SwiftyStrings
 "sushi,tacos,ramen".split(",") // ["sushi", "tacos", "ramen"]
 ```
 
-**strstr()**
+**indexOf()**
 ```swift
 "Life is like a box of chocolates.".indexOf(of: "box") // Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 15), _countUTF16: 1)
-``
+```
 
 **strstr()**
 ```swift
